@@ -71,3 +71,9 @@ project "GLFW"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
+
+	filter { "system:windows", "configurations:Debug" }
+		buildoptions "/MDd"
+
+	filter { "system:windows", "configurations:Release"}
+		buildoptions "/MD"
