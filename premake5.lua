@@ -73,7 +73,7 @@ project "GLFW"
 		optimize "on"
 
 	filter { "system:windows", "configurations:Debug" }
-		buildoptions "/MDd"
+		buildoptions { "/MDd" }
 
 	filter { "system:windows", "configurations:Release"}
-		buildoptions "/MD"
+		buildoptions { "/MD" }
